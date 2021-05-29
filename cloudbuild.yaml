@@ -1,6 +1,6 @@
 substitutions:
-  _IMAGE_NAME: sb-crawler
-  _SERVICE_NAME: sb-crawler
+  _IMAGE_NAME: crawler
+  _SERVICE_NAME: crawler
   _GCS_CACHE_BUCKET: ${PROJECT_ID}-m2-cache
   _REPOSITORY: sb-docker-repo
   _VERSION: 1.0.0
