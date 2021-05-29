@@ -65,7 +65,7 @@ steps:
   - -c
   - |
     source /workspace/version.sh
-    docker build -t us-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE_NAME}:$${APP_VERSION} --build-arg JAR_FILE=target/${_SERVICE_NAME}-$${APP_VERSION}.jar .
+    docker build -t us-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE_NAME}:$${APP_VERSION} --build-arg JAR_FILE=target/${_SERVICE_NAME}-$${APP_VERSION}.war .
 # Push the container image to docker Registry
 - name: 'gcr.io/cloud-builders/docker'
   entrypoint: bash
